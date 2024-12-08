@@ -437,7 +437,7 @@ input[type="month"]:focus {
     justify-content: space-between;
 }
 
-#total {
+.total {
     color: var(--color-primary-a0);
     text-transform: uppercase;
 }
