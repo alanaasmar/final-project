@@ -102,17 +102,19 @@ nav div {
 
 #banner p {
     font-size: 1.3rem;
+    margin-bottom: 40px;
 }
 
 #banner-button {
     background-color: var(--color-accent-a0);
-    color: var(--color-primary-a0);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 600;
     font-size: 1.3rem;
     padding: 15px 100px;
     border: 2px solid var(--color-primary-a0);
     border-radius: 10px;
+    font-weight: 600;
+    color: var(--color-primary-a0);
+    text-decoration: none;
 }
 
 #banner-button:hover {
@@ -183,6 +185,7 @@ strong {
     border: 2px solid var(--color-primary-a0);
     padding: 15px 100px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 #shop-now:hover {
@@ -260,8 +263,8 @@ footer p {
         padding: 50px 30px;
     }
 
-    #banner button {
-        padding: 10px 50px;
+    #banner-button {
+        padding: 15px 50px;
     }
     
     nav {
