@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>My Mini Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <img src="images/logo.svg" alt="My Mini Life logo">
+            <a href="index.html"><img src="images/logo.svg" alt="My Mini Life logo"></a>
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="shop.html">shop</a></li>
@@ -17,7 +17,8 @@
             <div>
                 <img src="images/account.svg" alt="Account" class="nav-icons">
                 <img src="images/cart.svg" alt="Shopping cart" class="nav-icons">
-            </div>  
+            </div>
+            <button class="menu-toggle">☰</button>
         </nav>
     </header>
     <section id="banner">
@@ -33,10 +34,12 @@
     </section>
     <section>
         <h2>View some of our customer's kits!</h2>
-        <img src="images/kit1.png" alt="Library miniature kit">
-        <img src="images/kit2.png" alt="Greenhouse minature kit">
-        <img src="images/kit3.png" alt="Cafe minature kit">
-        <img src="images/kit4.png" alt="Garden minature kit">
+        <div id="view-kits">
+            <img src="images/kit1.png" alt="Library miniature kit" class="kits">
+            <img src="images/kit2.png" alt="Greenhouse minature kit" class="kits">
+            <img src="images/kit3.png" alt="Cafe minature kit" class="kits">
+            <img src="images/kit4.png" alt="Garden minature kit" class="kits">
+        </div>
         <a href="shop.html"><button>Shop Now</button></a>
     </section>
     <footer>
@@ -52,5 +55,6 @@
         <img src="images/tiktok.svg" alt="TikTok">
         <p>© 2024 My Mini Life</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

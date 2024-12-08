@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <img src="images/logo.svg" alt="My Mini Life logo">
+            <a href="index.html"><img src="images/logo.svg" alt="My Mini Life logo"></a>
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="shop.html">shop</a></li>
             </ul>
-            <img src="images/account.svg" alt="Account">
-            <img src="images/cart.svg" alt="Shopping cart">
+            <div>
+                <img src="images/account.svg" alt="Account" class="nav-icons">
+                <img src="images/cart.svg" alt="Shopping cart" class="nav-icons">
+            </div>
+            <button class="menu-toggle">☰</button>
         </nav>
     </header>
     <section>
@@ -104,5 +107,6 @@
         <img src="images/tiktok.svg" alt="TikTok">
         <p>© 2024 My Mini Life</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

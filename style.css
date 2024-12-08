@@ -47,6 +47,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav ul  {
@@ -83,6 +84,10 @@ nav div {
     transform: scale(1.1);
 }
 
+.menu-toggle {
+    display: none;
+}
+
 #banner {
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
@@ -93,13 +98,6 @@ nav div {
     margin: 50px 10%;
     border-radius: 20px;
     color: var(--color-primary-a0);
-    
-}
-
-@media (max-width: 768px) {
-    #banner {
-        padding: 50px 20px;
-    }
 }
 
 #banner p {
@@ -112,7 +110,7 @@ nav div {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    padding: 10px 100px;
+    padding: 15px 100px;
     border: 2px solid var(--color-primary-a0);
     border-radius: 10px;
 }
@@ -121,26 +119,17 @@ nav div {
     background-color: var(--color-accent-a0) 0%;
 }
 
-button {
-    background-color: var(--color-accent-a0);
-    color: var(--color-primary-a0);
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    padding: 10px 100px;
-    border: 2px solid var(--color-primary-a0);
-    border-radius: 10px;
-}
-
-button:hover {
-    cursor: pointer;
-    
-}
-
 h1 {
     font-family: 'Bungee', 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
-    margin: 0  ;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Bungee', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: var(--color-accent-a0);
+    margin: 0 ;
 }
 
 p {
@@ -151,6 +140,63 @@ p {
     line-height: 1.8rem;
 }
 
+strong {
+    color: var(--color-accent-a20);
+}
+
+.kits {
+    width: 100px;
+}
+
 footer {
     background-color: var(--color-accent-a20);
+}
+
+
+/* ----- RESPPONSIVE -----*/
+@media (max-width: 768px) {
+    #banner {
+        padding: 50px 30px;
+    }
+
+    #banner button {
+        padding: 10px 50px;
+    }
+    
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: var(--color-accent-a0);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    nav div {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    nav ul.active {
+        display: flex;
+        order: 2;
+        align-items: flex-end;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--color-primary-a0);
+        cursor: pointer;
+        margin-left: 10px;
+    }
 }
