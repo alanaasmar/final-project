@@ -323,15 +323,16 @@ strong {
     flex-wrap: wrap;
     gap: 100px;
     padding: 20px;
+    margin: 50px 10%;
 }
 
 #checkout-form {
-    width: 60%;
+    flex: 2 60%;
     min-width: 300px;
 }
 
 #order-summary {
-    width: 20%;
+    flex: 1 20%;
     min-width: 300px;
 }
 
@@ -344,8 +345,7 @@ strong {
 
 #checkout-form input[type="text"], 
 #checkout-form input[type="number"], 
-#checkout-form input[type="month"], 
-#checkout-form input[type="file"] {
+#checkout-form input[type="month"] {
     padding: 10px;
     border: 1px solid var(--color-accent-a0);
     border-radius: 5px;
@@ -359,6 +359,11 @@ strong {
     margin-right: 10px;
 }
 
+#checkout-form h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
 #order-summary {
     display: flex;
     flex-direction: column;
@@ -366,15 +371,17 @@ strong {
     background-color: var(--color-accent-a0);
     padding: 30px;
     border-radius: 20px;
+    color: var(--color-primary-a0);
 }
 
 #order-summary hr {
     width: 100%;
-    border: 1px solid var(--color-accent-a30);
+    border: 1px solid var(--color-accent-a10);
 }
 
 #order-summary h2 {
     color: var(--color-primary-a0);
+    margin-top: 10px;
 }
 
 #order-summary .button {
@@ -393,6 +400,39 @@ strong {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#total {
+    color: var(--color-primary-a0);
+    text-transform: uppercase;
+}
+
+#upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 10px;
+    margin-top: 10px;
+    border: 2px dashed var(--color-accent-a50);
+    cursor: pointer;
+    
+}
+
+::file-selector-button {
+    background-color: var(--color-accent-a0);
+    border: 2px solid var(--color-accent-a0);
+    color: var(--color-primary-a0);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+::file-selector-button:hover {
+    background-color: var(--color-accent-a0) 0%;
+    border: 2px solid var(--color-accent-a0);
+    color: var(--color-accent-a0);
+    cursor: pointer;
 }
 
 /* ----- RESPPONSIVE MEDIA -----*/

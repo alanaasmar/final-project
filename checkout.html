@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Checkout - My Mini Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     <section id="checkout">
         <div id="checkout-form">
             <h1>Checkout</h1>
-            <h2>Shipping Address</h2>
+            <h2 id="h2-1">Shipping Address</h2>
             <form>
                 <label>First Name:<input type="text"></label>
                 <label>Last Name:<input type="text"></label>
@@ -43,7 +43,12 @@
                 <label><input type="checkbox"> Billing Address same as shipping address</label>
             </form>
             <h2>Upload Images</h2>
-            <label>Please upload your images here. Please submit as many images as you need. The more details the better!<img src="images/upload.svg"><input type="file"></label>
+            <label>Please upload your images here. Please submit as many images as you need. The more details the better!
+                <div id="upload">
+                    <img src="images/upload.svg" alt="Upload images">
+                    <input type="file" accept=".jpg, .jpeg, .png" multiple>
+                </div>
+            </label>
         </div>
         <div id="order-summary">
             <button class="button">Place Order</button>
@@ -55,16 +60,16 @@
                 <p>$65.00</p>
             </div>
             <div class="order">
-                <p>Shipping and handling</p>
+                <p>Shipping and Handling</p>
                 <p>TBD</p>
             </div>
             <hr>
             <div class="order">
-                <p>Order Total</p>
-                <p>$65.00</p>
+                <p><strong id="total">Total</strong></p>
+                <p><strong id="total">$65.00</strong></p>
             </div>
-            
             <p>Due to varying weights of kits, shipping costs will be determined after the creation of each kit. We will contact you with more information on a later date. We thank you for your cooperation and understanding.</p>
+            <button class="button">Place Order</button>
         </div>
     </section>
     <footer>
