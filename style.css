@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 /** Primary colors */
 --color-primary-a0: #f1eee5;
@@ -8,12 +10,12 @@
 --color-primary-a50: #272726;
 
 /** Accent colors */
---color-accent-a0: #708570;
---color-accent-a10: #5d6e5d;
---color-accent-a20: #4a574a;
---color-accent-a30: #384238;
---color-accent-a40: #272d27;
---color-accent-a50: #171a17;
+--color-accent-a0: #76876f;
+--color-accent-a10: #626f5c;
+--color-accent-a20: #4e5849;
+--color-accent-a30: #3b4238;
+--color-accent-a40: #292e27;
+--color-accent-a50: #181a17;
 
 /** Neutral colors */
 --color-neutral-a0: #ffffff;
@@ -22,4 +24,39 @@
 --color-neutral-a30: #5e5e5e;
 --color-neutral-a40: #303030;
 --color-neutral-a50: #000000;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: var(--color-primary-a0);
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--color-accent-a0);
+    position: sticky;
+    top: 0;
+    padding: 20px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul  {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: 30px;
+    list-style: none;
+}
+
+section {
+    padding: 0 10%;
+}
+
+footer {
+    background-color: var(--color-accent-a20);
 }
