@@ -26,21 +26,27 @@
             <h1>Checkout</h1>
             <h2 id="h2-1">Shipping Address</h2>
             <form>
-                <label>First Name:<input type="text"></label>
-                <label>Last Name:<input type="text"></label>
+                <div class="inputs-col">
+                    <label>First Name:<input type="text"></label>
+                    <label>Last Name:<input type="text"></label>
+                </div>
                 <label>Street Address:<input type="text"></label>
-                <label>Apt Number:<input type="text"></label>
-                <label>State:<input type="text"></label>
-                <label>Area/Zip Code:<input type="number"></label>
+                <div class="inputs-col">
+                    <label>Apt Number:<input type="text"></label>
+                    <label>State:<input type="text"></label>
+                    <label>Area/Zip Code:<input type="number"></label>
+                </div>
             </form>
             <form>
                 <h2>Payment Method</h2>
                 <label>Card Number:<input type="number"></label>
-                <label>Exp Date:<input type="month"></label>
-                <label>CSV:<input type="number"></label>
-                <label>Area/Zip Code:<input type="number"></label>
-                <label><input type="checkbox"> Save this card for later use</label>
-                <label><input type="checkbox"> Billing Address same as shipping address</label>
+                <div class="inputs-col">
+                    <label>Exp Date:<input type="month"></label>
+                    <label>CSV:<input type="number"></label>
+                    <label>Area/Zip Code:<input type="number"></label>
+                </div>
+                <label class="checkbox"><input type="checkbox"> Save this card for later use</label>
+                <label class="checkbox"><input type="checkbox"> Billing Address same as shipping address</label>
             </form>
             <h2>Upload Images</h2>
             <label>Please upload your images here. Please submit as many images as you need. The more details the better!
