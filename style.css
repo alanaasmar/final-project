@@ -17,19 +17,23 @@
 --color-accent-a40: #292e27;
 --color-accent-a50: #181a17;
 
-/** Neutral colors */
+/** Neutral colors 
 --color-neutral-a0: #ffffff;
 --color-neutral-a10: #c6c6c6;
 --color-neutral-a20: #919191;
 --color-neutral-a30: #5e5e5e;
 --color-neutral-a40: #303030;
---color-neutral-a50: #000000;
+--color-neutral-a50: #000000;*/
 }
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background-color: var(--color-primary-a0);
     margin: 0 auto;
+}
+
+section {
+    margin: 0 10%;
 }
 
 header {
@@ -51,10 +55,100 @@ nav ul  {
     flex-grow: 1;
     gap: 30px;
     list-style: none;
+    font-family: 'Bungee', 'Montserrat', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
-section {
-    padding: 0 10%;
+nav a {
+    text-decoration: none;
+    color: var(--color-primary-a0);
+    font-size: 1.6rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons {
+    width: 25px;
+}
+
+.nav-icons:hover {
+    transform: scale(1.1);
+}
+
+#banner {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 50px;
+    margin: 50px 10%;
+    border-radius: 20px;
+    color: var(--color-primary-a0);
+    
+}
+
+@media (max-width: 768px) {
+    #banner {
+        padding: 50px 20px;
+    }
+}
+
+#banner p {
+    font-size: 1.3rem;
+}
+
+#banner-button {
+    background-color: var(--color-accent-a0);
+    color: var(--color-primary-a0);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 10px 100px;
+    border: 2px solid var(--color-primary-a0);
+    border-radius: 10px;
+}
+
+#banner-button:hover {
+    background-color: var(--color-accent-a0) 0%;
+}
+
+button {
+    background-color: var(--color-accent-a0);
+    color: var(--color-primary-a0);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 10px 100px;
+    border: 2px solid var(--color-primary-a0);
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    
+}
+
+h1 {
+    font-family: 'Bungee', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    margin: 0  ;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+#about p {
+    line-height: 1.8rem;
 }
 
 footer {
