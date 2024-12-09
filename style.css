@@ -603,16 +603,6 @@ input[type="month"]:focus {
         gap: 0;
     }
 
-    #checkout-form input[type="month"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid var(--color-accent-a0);
-        border-radius: 5px;
-        font-size: 1rem;
-        margin-top: 5px;
-        transition: all 0.2s ease;
-    }
-
     #order-summary .button {
         padding: 15px 30px;
     }
