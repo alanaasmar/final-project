@@ -240,10 +240,11 @@ strong {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
-    border: 2px solid var(--color-primary-a0);
+    border: 2px solid var(--color-accent-a0);
     padding: 15px 100px;
     border-radius: 10px;
     text-decoration: none;
+    text-align: center;
 }
 
 .button:hover {
@@ -470,6 +471,17 @@ input[type="month"]:focus {
     cursor: pointer;
 }
 
+/* ----- THANK YOU -----*/
+#thank-you {
+    text-align: center;
+    margin: 15% 30%;
+}
+
+#thank-you p {
+    margin-bottom: 40px;
+}
+
+
 /* ----- RESPPONSIVE MEDIA -----*/
 @media (max-width: 1410px) {
     #checkout {
@@ -491,6 +503,10 @@ input[type="month"]:focus {
     
     .kits {
         width: 45%;
+    }
+
+    #thank-you {
+        margin: 20%;
     }
 }
 
@@ -591,4 +607,13 @@ input[type="month"]:focus {
         padding: 15px 30px;
     }
 
+    #thank-you {
+        margin: 30% 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    #thank-you .button {
+        padding: 15px 50px;
+    }
 }
