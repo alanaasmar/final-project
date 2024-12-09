@@ -345,8 +345,7 @@ strong {
 }
 
 #checkout-form input[type="text"], 
-#checkout-form input[type="number"], 
-#checkout-form input[type="month"] {
+#checkout-form input[type="number"] {
     padding: 10px;
     border: 1px solid var(--color-accent-a0);
     border-radius: 5px;
@@ -356,8 +355,7 @@ strong {
 }
 
 input[type="text"]:focus, 
-input[type="number"]:focus, 
-input[type="month"]:focus {
+input[type="number"]:focus {
     border: 2px solid var(--color-accent-a0);
     box-shadow: 0 0 3px var(--color-accent-a0);
     outline: none;
